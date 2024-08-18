@@ -1,6 +1,4 @@
-**2022年3月17日更新开通服务器教程。服务器系统推荐Debain10，不建议用CentOS 7系统，CentOS 7安装脚本可能有问题。**
-
-**如果无法查看图片，可以访问https://tr1.freeair888.club/自建v2ray服务器教程/**
+**2024年7月11日更新。**
 
 ***
 
@@ -24,7 +22,7 @@
 
 VPS服务器需要选择国外的，首选国际知名的vultr，速度不错、稳定且性价比高，按小时计费，能够随时开通和删除服务器，新服务器即是新ip。
 
-vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球17个服务器位置可选，包括日本、韩国、新加坡、洛杉矶、德国、荷兰等。支持支付宝和paypal付款。） 
+vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球32个服务器位置可选，包括洛杉矶、韩国、新加坡、日本、德国、荷兰等。支持支付宝和paypal付款。） 
 
 <a href="https://www.vultr.com/?ref=7048874"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a>
 
@@ -34,73 +32,70 @@ vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月
 
 ***
 
-2.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**不推荐，仅提供ipv6 ip，不推荐**)
-
-3.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**推荐**)
-
-5美元/月的服务器配置信息：  单核   1G内存    25G SSD硬盘   带宽1G    1000G流量/月  (**推荐**)
- 
-10美元/月的服务器配置信息： 单核   2G内存    55G SSD硬盘   带宽1G    2000G流量/月  
-
-20美元/月的服务器配置信息： 2cpu   4G内存   80G SSD硬盘    带宽1G    3000G流量/月  
-
-40美元/月的服务器配置信息： 4cpu   8G内存   160G SSD硬盘   带宽1G    4000G流量/月  
- 
-***
-
 **注意：2.5美元套餐只提供ipv6 ip，一般的电脑用不了，所以建议选择3.5美元及以上的套餐。**
 
-vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被墙时这个方法很有用。当ip被墙时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。在账号的Billing选项里可以看到账户余额。
+vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被墙时这个方法很有用。当ip被墙时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。在账号的Account——Make a payment选项里可以看到账户余额。
 
 **账号充值如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v0.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
+依次点击Account——Make a payment——Alipay(支付宝)
 
 **vultr改版了，最新开通服务器步骤如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v1.jpg)
 
-选择“Cloud Compute”。
+点击网页右上角的Deploy图标
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2.jpg)
 
-选择“Regular Performance”。
+在下拉菜单中，点击Deploy New Server
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v3.jpg)
 
-选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
+服务器类型选择Cloud Compute-Shared CPU
 
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v4.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
+选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。
 
-**点击图中的系统名字，会弹出具体系统版本，推荐Debain10 （不要选CentOS7！）**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v5.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
+点击图中的系统名字，会弹出具体系统版本，推荐Debain11 ,不要选择CentOS
 
-选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
+选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。便宜的套餐，点击Regular Cloud Compute，选择第一个套餐，提示升级选择No Thanks。
 
-关闭自动备份，这个是收费的，可以关闭它。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v7.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
+关闭自动备份Auto Backups，这个是收费的。点击它，在右侧的I understand the risk前面选择勾，然后点击Disable Auto Backups即可关闭自动备份。
 
-最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v8.jpg)
 
-**开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
+最后点击“Deploy Now”开始部署，等6~10分钟就差不多了。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
+**完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/Debian2.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v9.jpg)
+
+点击Products——Compute就可以看到购买的服务器列表
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v10.jpg)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v11.jpg)
+
+在服务器的最右边，点击三个点，再点击Server Details就可以看到该服务器的详细信息。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v12.jpg)
+
+服务器ip和系统密码可以看到并能复制。
 
 
 **删掉服务器步骤如下图**：
 
 删除服务器时，先开新的服务器后再删除旧服务器，这样可以保证新服务器的ip与旧ip不同。
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
 
@@ -112,8 +107,12 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 购买服务器后，需要部署一下。因为你买的是虚拟东西，而且又远在国外，我们需要一个叫Xshell的软件来远程部署。Xshell windows版下载地址：
 
-[国外云盘1下载](https://tr601.free4444.xyz/Xshell_setup_wm.exe)
-[国外云盘2下载](https://tr201.free4444.xyz/Xshell_setup_wm.exe)
+xshell5:
+
+[国外云盘1下载](https://d2.freessr2.xyz/Xshell_setup_wm.exe)
+[国外云盘2下载](https://d.dtku35.xyz/Xshell_setup_wm.exe)
+
+**注意：如果使用xshell5的过程中提示“找不到匹配的host key算法”，可以下载更高的版本来解决，比如xshell7，可在xshell中文官方网站下载**：https://www.xshell.com/zh/free-for-home-school
 
 如果你是Mac苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。直接打开Terminal终端，输入：ssh root@43.45.43.21（将45.45.43.21换成你的IP），之后输入你的密码就可以登录了（输入密码的时候屏幕上不会有显示）
 
@@ -147,21 +146,27 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-**Ubuntu 16+ / Debian 8+ 系统 v2ray一键部署管理脚本**：
+**Ubuntu 16+ / Debian 8+ 系统 v2ray一键部署管理脚本**（ps：如果这个脚本不好用，教程末尾还有一键搭建多个协议节点脚本）
 
 安装命令：
 
+```bash
 source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh
+```
 
 升级命令(保留配置文件更新)：
 
+```bash
 source <(curl -sL https://multi.netlify.app/v2ray.sh) -k
+```
 
 卸载命令：
 
+```bash
 source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
+```
 
-> 如果输入安装命令没反应，那是因为服务器系统没有自带curl命令，安装一下curl。
+> 如果输入安装命令后提示curl: command not found，那是因为服务器系统没有自带curl命令，安装一下curl。
 
 > CentOS系统安装curl命令：yum install -y curl   
 
@@ -180,54 +185,35 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-2.PNG)
 
-安装速度很快，安装结束后默认有个kcp协议帐号，如果不想用kcp协议，可以输入v2ray管理页面来进行传输方式的更改。
+安装速度很快，安装结束后默认有个kcp协议帐号，如果不想用kcp协议，可以输入v2ray管理页面来进行传输方式的更改。（推荐websocket协议）
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-3.PNG)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-4.PNG)
 
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray-cs.png)
+
+安装成功后会出现“multi-v2ray install success!”字样。
+
+***
+
 **如果选择的是CentOS系统，还需要关闭vps防火墙来开放端口，相关命令如下：**
 
-**查看防火墙状态命令**：firewall-cmd --state
-
-**停止firewall命令**：systemctl stop firewalld.service
-
-**禁止firewall开机启动命令**：systemctl disable firewalld.service
-
-
-***
-
-**注意：账号无法使用，可能原因：客户端与服务端的设备系统时间相差过大。解决方法如下：**
-
-**1、一般国外的VPS的镜像都是默认的国外时区，使用起来不是很方便。可以把它修改成北京时间，就会方便很多。**
-**修改中国时区代码如下**：
-
-\cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
-
-**2、利用NTP同步时间协议**
-
-**CentOS系统先安装NTP**：yum install ntp ntpdate -y
-
-> 如果是Ubuntu/Debian系统执行下面2条命令来安装NTP
-
-> apt-get update
-
-> apt-get install ntp ntpdate -y  
-
-**安装NTP后，按照顺序依次执行以下3条命令，分别是停止NTP服务、同步NTP时间、启动NTP服务**：
-
-service ntpd stop  
-
-ntpdate us.pool.ntp.org 
-
-service ntpd start 
-
-**执行完成后，VPS上就是相对精确的时间设置了。很多依赖于系统时间的应用程序也就能正常工作了。注意：当vps重启后输入date来检查下时间，如果时间不是最新的，再执行以上3条命令即可。**
-
-> 除了通过NTP来同步时间以外，还可以手动修改vps系统时间，需要先修改中国时区，之后输入时间命令，格式（数字改为和自己电脑时间一致，误差30秒以内）：date -s "2020-2-02 19:14:00"
-
+**查看防火墙状态命令**：
+```bash
+firewall-cmd --state
+```
+**停止firewall命令**：
+```bash
+systemctl stop firewalld.service
+```
+**禁止firewall开机启动命令**：
+```bash
+systemctl disable firewalld.service
+```
 
 ***
+
 
 **第三步：一键加速VPS服务器**
 
@@ -235,11 +221,11 @@ service ntpd start
 
 ***
 
+```bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
-
 chmod +x tcp.sh
-
 ./tcp.sh
+```
 
 
 ***
@@ -250,7 +236,7 @@ chmod +x tcp.sh
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
 
-操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。
+操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。（如果服务器系统是Debain10或以上系统，可不用安装内核，直接输入数字4启动bbr原版加速。）
 
 以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
 
@@ -281,51 +267,17 @@ chmod +x tcp.sh
 
 **客户端使用教程：[v2ray各平台图文使用教程](https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%90%84%E5%B9%B3%E5%8F%B0%E5%9B%BE%E6%96%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)**
 
-浏览器代理设置成Socks(5) 127.0.0.1 和1080 即可通过v2ray代理上网。
+**软件代理设置**：
 
-谷歌浏览器chrome可配合switchyomega插件来使用，下载插件：[switchyomega](https://github.com/atrandys/trojan/releases/download/1.0.0/SwitchyOmega_Chromium.crx)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn001.jpg)
 
-安装插件，打开chrome，打开扩展程序，将下载的插件拖动到扩展程序页面，添加到扩展。
-![20181116000534](https://user-images.githubusercontent.com/12132898/70548725-0461d000-1bae-11ea-9d1e-4577e36ac46e.png)
-
-完成添加，会跳转到switchyomega页面，点跳过教程，然后点击proxy，如图填写，最后点击应用选项。
-![20181116001438](https://user-images.githubusercontent.com/12132898/70548727-04fa6680-1bae-11ea-99da-568af4fd6f5f.png)
-
+windows系统打开v2rayN软件，在软件的底部，选择“自动配置系统代理”，路由可选择“全局(Global)”。全局(Global)模式：所有网站通过节点服务器代理上网。
 
 ***
 
 **常见问题参考解决方法**：
 
-**1、账号无法使用，可能原因一：客户端与服务端的设备系统时间相差过大。**
-
-**a、一般国外的VPS的镜像都是默认的国外时区，使用起来不是很方便。可以把它修改成北京时间，就会方便很多。**
-**修改中国时区代码如下**：
-
-\cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
-
-**b、利用NTP同步时间协议**
-
-**CentOS系统先安装NTP**：yum install ntp ntpdate -y
-
-> 如果是Ubuntu/Debian系统执行下面2条命令来安装NTP
-
-> apt-get update
-
-> apt-get install ntp ntpdate -y  
-
-**安装NTP后，按照顺序依次执行以下3条命令，分别是停止NTP服务、同步NTP时间、启动NTP服务**：
-
-service ntpd stop  
-
-ntpdate us.pool.ntp.org 
-
-service ntpd start 
-
-**执行完成后，VPS上就是相对精确的时间设置了。很多依赖于系统时间的应用程序也就能正常工作了。注意：当vps重启后输入date来检查下时间，如果时间不是最新的，再执行以上3条命令即可。**
-
-> 除了通过NTP来同步时间以外，还可以手动修改vps系统时间，需要先修改中国时区，之后输入时间命令，格式（数字改为和自己电脑时间一致，误差30秒以内）：date -s "2020-2-02 19:14:00"
-
-**2、账号无法使用，可能原因：vps防火墙端口没有放开或者本地电脑防火墙、杀毒软件阻挡代理软件。**
+**1、账号无法使用，可能原因：vps防火墙端口没有放开或者本地电脑防火墙、杀毒软件阻挡代理软件。**
 
 关闭vps防火墙即可开放所有端口，本地电脑防火墙和杀毒软件手动关闭即可。
 
@@ -336,14 +288,25 @@ service ntpd start
 禁止firewall开机启动命令：systemctl disable firewalld.service
 
 
-**3、搭建的账号之前能用，突然不能用了，怎么解决？**
+**2、搭建的账号之前能用，突然不能用了，怎么解决？**
 
-**如果ip不能ping通，xshell不能直接连接vps服务器，说明ip被墙了，需要开新服务器换ip。**
+如果ip不能ping通，xshell不能直接连接vps服务器，说明ip被墙了，需要开新服务器换ip。
 
-**如果ip能ping，xshell能直接连接vps服务器，说明ip没有被墙，多半是端口被封了，优先换端口。**
+如果ip能ping，xshell能直接连接vps服务器，说明ip没有被墙，多半是端口被封了，优先换端口。
 
-**如果ip和端口都没问题，可以尝试来更换传输协议，比如TCP、Websocket、mKCP等，测试哪种协议最适合自己的网络环境。**
+如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。
+
+**3、一键搭建多个协议节点脚本，无需域名，小白专用**
+
+```bash
+bash <(curl -Ls https://gitlab.com/rwkgyg/sing-box-yg/raw/main/sb.sh)
+```
+脚本快捷管理命令：sb
+
+[图文教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E5%A4%9A%E4%B8%AA%E5%8D%8F%E8%AE%AE%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B)
+
+无需域名。按照提示操作安装，全程回车即可。搭建好后默认有4个节点，1个vless-reality-vision节点，1个vmess-ws节点，1个Hysteria-2节点，1个Tuic-v5节点。
 
 ***
 
-有问题可以发邮件至海外邮箱kebi2014@gmail.com
+有问题可以发邮件至海外邮箱rebeccalane27@gmail.com

@@ -1,6 +1,4 @@
-**2022年3月17日更新开通服务器教程。**
-
-**如果无法查看图片，可以访问https://tr1.freeair888.club/自建trojan服务器教程/**
+**2024年4月27日更新。**
 
 ***
 
@@ -8,7 +6,7 @@
 
 第一步：购买VPS服务器
 
-第二步：购买域名
+第二步：购买域名（非必选）
 
 第三步：一键搭建服务器
 
@@ -21,7 +19,7 @@
 
 VPS服务器需要选择国外的，首选国际知名的vultr，速度不错、稳定且性价比高，按小时计费，能够随时开通和删除服务器，新服务器即是新ip。
 
-vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球17个服务器位置可选，包括日本、韩国、新加坡、洛杉矶、德国、荷兰等。支持支付宝和paypal付款。） 
+vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球32个服务器位置可选，包括洛杉矶、韩国、新加坡、日本、德国、荷兰等。支持支付宝和paypal付款。） 
 
 <a href="https://www.vultr.com/?ref=7048874"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a>
 
@@ -31,73 +29,70 @@ vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月
 
 ***
 
-2.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**不推荐，仅提供ipv6 ip，不推荐**)
-
-3.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**推荐**)
-
-5美元/月的服务器配置信息：  单核   1G内存    25G SSD硬盘   带宽1G    1000G流量/月  (**推荐**)
- 
-10美元/月的服务器配置信息： 单核   2G内存    55G SSD硬盘   带宽1G    2000G流量/月  
-
-20美元/月的服务器配置信息： 2cpu   4G内存   80G SSD硬盘    带宽1G    3000G流量/月  
-
-40美元/月的服务器配置信息： 4cpu   8G内存   160G SSD硬盘   带宽1G    4000G流量/月  
-
-***
-
 **注意：2.5美元套餐只提供ipv6 ip，一般的电脑用不了，所以建议选择3.5美元及以上的套餐。**
 
-vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被墙时这个方法很有用。当ip被墙时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。在账号的Billing选项里可以看到账户余额。
+vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被墙时这个方法很有用。当ip被墙时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。在账号的Account——Make a payment选项里可以看到账户余额。
 
 **账号充值如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v0.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
-
+依次点击Account——Make a payment——Alipay(支付宝)
 
 **vultr改版了，最新开通服务器步骤如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v1.jpg)
 
-选择“Cloud Compute”。
+点击网页右上角的Deploy图标
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2.jpg)
 
-选择“Regular Performance”。
+在下拉菜单中，点击Deploy New Server
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v3.jpg)
 
-选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
+服务器类型选择Cloud Compute-Shared CPU
 
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v4.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
+选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。
 
-**点击图中的系统名字，会弹出具体系统版本，推荐Debain10**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v5.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
+点击图中的系统名字，会弹出具体系统版本，推荐Debain10、Debain11
 
-选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
+选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。便宜的套餐，点击Regular Cloud Compute，选择第一个套餐，提示升级选择No Thanks。
 
-关闭自动备份，这个是收费的，可以关闭它。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v7.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
+关闭自动备份Auto Backups，这个是收费的。点击它，在右侧的I understand the risk前面选择勾，然后点击Disable Auto Backups即可关闭自动备份。
 
-最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v8.jpg)
 
-**开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
+最后点击“Deploy Now”开始部署，等6~10分钟就差不多了。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
+**完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程06.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v9.jpg)
+
+点击Products——Compute就可以看到购买的服务器列表
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v10.jpg)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v11.jpg)
+
+在服务器的最右边，点击三个点，再点击Server Details就可以看到该服务器的详细信息。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v12.jpg)
+
+服务器ip和系统密码可以看到并能复制。
+
 
 **删掉服务器步骤如下图**：
 
 删除服务器时，先开新的服务器后再删除旧服务器，这样可以保证新服务器的ip与旧ip不同。
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
 
@@ -118,8 +113,12 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 购买服务器后，需要部署一下。因为你买的是虚拟东西，而且又远在国外，我们需要一个叫Xshell的软件来远程部署。Xshell windows版下载地址：
 
-[国外云盘1下载](https://tr601.free4444.xyz/Xshell_setup_wm.exe)
-[国外云盘2下载](https://tr201.free4444.xyz/Xshell_setup_wm.exe)
+xshell5:
+
+[国外云盘1下载](https://d2.freessr2.xyz/Xshell_setup_wm.exe)
+[国外云盘2下载](https://d.dtku35.xyz/Xshell_setup_wm.exe)
+
+**注意：如果使用xshell5的过程中提示“找不到匹配的host key算法”，可以下载更高的版本来解决，比如xshell7，可在xshell中文官方网站下载**：https://www.xshell.com/zh/free-for-home-school
 
 如果你是Mac苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。直接打开Terminal终端，输入：ssh root@43.45.43.21（将45.45.43.21换成你的IP），之后输入你的密码就可以登录了（输入密码的时候屏幕上不会有显示）
 
@@ -155,9 +154,11 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **一键安装trojan脚本代码（系统支持centos7+/debian9+/ubuntu16+）**：
 
-***
+**脚本1**：
 
+```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh)"
+```
 
 > 如果输入安装命令没反应，或者提示curl: command not found ，那是因为服务器系统没有自带curl命令，安装一下curl。
 
@@ -167,7 +168,17 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/t
 
 ***
 
-复制上面整个代码到vps服务器中进行安装，安装过程中会提示输入域名。
+**脚本2**：
+
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
+```
+
+无需域名。有域名也行。按照提示操作，一般回车即可。搭建好后默认有6个节点，3个vless节点，1个vmess节点，1个trojan节点，1个ss节点。鼠标往上翻，根据客户端来复制对应的一键导入链接。
+
+***
+
+教程以第1个脚本为演示。复制上面第1个脚本代码到vps服务器中进行安装，安装过程中会提示输入域名。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan-new1.PNG)
 
@@ -175,9 +186,13 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/t
 
 安装过程会先提示输入域名，不要带http或https，只输入域名即可，例如domain.com或 a.domain.com ，之后提示输入密码时输入密码。
 
-最终安装完成后，配置文件信息会自动展示在屏幕上，可以复制下来用。并且vps会展示一条下载地址，复制地址，并下载下来即可。解压缩下载的trojan-cli.zip的压缩包，进入文件夹，双击start.bat，开启Trojan服务，Trojan会监听本地1080端口。
+最终安装完成后，配置文件信息会自动展示在屏幕上，对于trojan账号信息，最重要的是域名和密码。以v2rayN客户端为例，填入方法如下图：
 
-浏览器代理设置成socks5，直接指向127.0.0.1：1080即可。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan-2.png)
+
+打开v2rayN客户端——添加trojan服务器——填入账号信息，如上图，重要信息包括：域名、密码、传输层安全tls、SNI。
+
+浏览器代理设置成socks5 127.0.0.1:1080。
 
 谷歌浏览器chrome可配合switchyomega插件来使用，下载插件：[switchyomega](https://github.com/atrandys/trojan/releases/download/1.0.0/SwitchyOmega_Chromium.crx)
 
@@ -195,12 +210,14 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/t
 
 ***
 
+```bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
 
 chmod +x tcp.sh
 
 ./tcp.sh
 
+```
 
 ***
 
@@ -210,7 +227,7 @@ chmod +x tcp.sh
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
 
-操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。
+操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。（如果服务器系统是Debain10或以上系统，可不用安装内核，直接输入数字4启动bbr原版加速。）
 
 以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
 
@@ -273,4 +290,4 @@ systemctl restart trojan
 ***
 
 
-有问题可以发邮件至海外邮箱kebi2014@gmail.com
+有问题可以发邮件至海外邮箱rebeccalane27@gmail.com

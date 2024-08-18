@@ -1,6 +1,4 @@
-**2022年3月17日更新开通服务器教程。**
-
-**如果无法查看图片，可以访问https://tr1.freeair888.club/自建ss服务器教程/**
+**2024年7月11日更新。**
 
 ***
 
@@ -19,7 +17,7 @@
 
 VPS服务器需要选择国外的，首选国际知名的vultr，速度不错、稳定且性价比高，按小时计费，能够随时开通和删除服务器，新服务器即是新ip。
 
-vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球17个服务器位置可选，包括日本、韩国、新加坡、洛杉矶、德国、荷兰等。支持支付宝和paypal付款。） 
+vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球32个服务器位置可选，包括洛杉矶、韩国、新加坡、日本、德国、荷兰等。支持支付宝和paypal付款。） 
 
 <a href="https://www.vultr.com/?ref=7048874"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a>
 
@@ -29,74 +27,69 @@ vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月
 
 ***
 
-2.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**不推荐，仅提供ipv6 ip，不推荐**)
-
-3.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**推荐**)
-
-5美元/月的服务器配置信息：  单核   1G内存    25G SSD硬盘   带宽1G    1000G流量/月  (**推荐**)
- 
-10美元/月的服务器配置信息： 单核   2G内存    55G SSD硬盘   带宽1G    2000G流量/月  
-
-20美元/月的服务器配置信息： 2cpu   4G内存   80G SSD硬盘    带宽1G    3000G流量/月  
-
-40美元/月的服务器配置信息： 4cpu   8G内存   160G SSD硬盘   带宽1G    4000G流量/月  
-
-
-***
-
 **注意：2.5美元套餐只提供ipv6 ip，一般的电脑用不了，所以建议选择3.5美元及以上的套餐。**
 
-vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被墙时这个方法很有用。当ip被墙时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。在账号的Billing选项里可以看到账户余额。
+vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被墙时这个方法很有用。当ip被墙时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。在账号的Account——Make a payment选项里可以看到账户余额。
 
 **账号充值如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v0.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
-
+依次点击Account——Make a payment——Alipay(支付宝)
 
 **vultr改版了，最新开通服务器步骤如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v1.jpg)
 
-选择“Cloud Compute”。
+点击网页右上角的Deploy图标
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2.jpg)
 
-选择“Regular Performance”。
+在下拉菜单中，点击Deploy New Server
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v3.jpg)
 
-选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
+服务器类型选择Cloud Compute-Shared CPU
 
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v4.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
+选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。
 
-**点击图中的系统名字，会弹出具体系统版本，推荐Debain10或者 CentOS7 （不要选默认的CentOS8，脚本不支持CentOS8！）**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v5.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
+点击图中的系统名字，会弹出具体系统版本，推荐Debain 11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，比如Debain12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持）
 
-选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
+选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。便宜的套餐，点击Regular Cloud Compute，选择第一个套餐，提示升级选择No Thanks。
 
-关闭自动备份，这个是收费的，可以关闭它。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v7.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
+关闭自动备份Auto Backups，这个是收费的。点击它，在右侧的I understand the risk前面选择勾，然后点击Disable Auto Backups即可关闭自动备份。
 
-最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v8.jpg)
 
-**开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统密码获取方法如下图：**
+最后点击“Deploy Now”开始部署，等6~10分钟就差不多了。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
+**完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程06.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v9.jpg)
+
+点击Products——Compute就可以看到购买的服务器列表
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v10.jpg)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v11.jpg)
+
+在服务器的最右边，点击三个点，再点击Server Details就可以看到该服务器的详细信息。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v12.jpg)
+
+服务器ip和系统密码可以看到并能复制。
 
 **删掉服务器步骤如下图**：
 
 删除服务器时，先开新的服务器后再删除旧服务器，这样可以保证新服务器的ip与旧ip不同。
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
 
@@ -109,8 +102,12 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 购买服务器后，需要部署一下。因为你买的是虚拟东西，而且又远在国外，我们需要一个叫Xshell的软件来远程部署。Xshell windows版下载地址：
 
-[国外云盘1下载](https://tr601.free4444.xyz/Xshell_setup_wm.exe)
-[国外云盘2下载](https://tr201.free4444.xyz/Xshell_setup_wm.exe)
+xshell5:
+
+[国外云盘1下载](https://d2.freessr2.xyz/Xshell_setup_wm.exe)
+[国外云盘2下载](https://d.dtku35.xyz/Xshell_setup_wm.exe)
+
+**注意：如果使用xshell5的过程中提示“找不到匹配的host key算法”，可以下载更高的版本来解决，比如xshell7，可在xshell中文官方网站下载**：https://www.xshell.com/zh/free-for-home-school
 
 如果你是Mac苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。直接打开Terminal终端，输入：ssh root@43.45.43.21（将45.45.43.21换成你的IP），之后输入你的密码就可以登录了（输入密码的时候屏幕上不会有显示）
 
@@ -151,24 +148,23 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 1、加密方式：none  协议：origin 混淆：tls1.2_ticket_auth
 
-2、加密方式：none  协议：auth_chain_a 混淆：tls1.2_ticket_auth 
-
-3、高阶篇的SSR+TLS+Caddy
+2、加密方式：none   协议：auth_chain_a 混淆：tls1.2_ticket_auth 
 
 **如果搭建SS账号，请使用脚本二，加密方式推荐aes-256-gcm**
 
 ***
 
-**CentOS 6和7/Debian6+/Ubuntu14+ ShadowsocksR/Shadowsocks一键部署管理脚本：**
+系统推荐Debain11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，会导致SSR无法启动成功，比如Debain12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持）
+
+**一键部署管理脚本：**
 
 **脚本一(SSR)，安装完成后，快捷管理命令：bash ssr.sh**
 
 ***
 
-yum -y install wget
-
+```bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
-
+```
 ***
 
 **脚本二（SS）**
@@ -177,26 +173,17 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 
 ***
 
-yum -y install wget
-
+```bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ss-go.sh && chmod +x ss-go.sh && bash ss-go.sh
+```
 
 ***
 
-**脚本三（SSR多用户管理脚本）**
+> 如果输入安装命令后提示wget: command not found，那是因为服务器系统没有自带wget命令，安装一下wget。
 
-**脚本三没有单独做图文教程，参考脚本一的图文说明摸索下就会了。安装完成后，快捷管理命令：bash ssrmu.sh  所有用户流量清零命令:
-bash ssrmu.sh clearall**
+> CentOS系统安装curl命令：yum install -y wget
 
-***
-
-yum -y install wget
-
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
-
-***
-
-> 如果提示 wget: command not found 的错误，这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。CentOS系统安装wget命令: yum install -y wget  Debian/Ubuntu系统安装wget命令:apt-get install -y wget
+> Debian/Ubuntu系统安装curl命令：apt-get install -y wget
 
 
 ***
@@ -262,23 +249,32 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 **注意：如果创建的是centos7的服务器，需要使用命令关闭防火墙，否则无法使用代理。CentOS 7.0默认使用的是firewall作为防火墙。**
 
-**查看防火墙状态命令：firewall-cmd --state**
-
-**停止firewall命令：systemctl stop firewalld.service**
-
-**禁止firewall开机启动命令：systemctl disable firewalld.service**
-
+**查看防火墙状态命令**：
+```bash
+firewall-cmd --state
+```
+**停止firewall命令**：
+```bash
+systemctl stop firewalld.service
+```
+**禁止firewall开机启动命令**：
+```bash
+systemctl disable firewalld.service
+```
 ***
 
 **高阶篇**
 
-当封锁特别厉害的时候，常规的SS/SSR配置可能已经无法满足需求，这个时候我们可以搭建SSR+TLS+Caddy，搭建需要购买域名，可以参考这个[域名购买及设置教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) （有免费域名） 。
+当封锁特别厉害的时候，常规的SS/SSR配置可能已经无法满足需求，这个时候SSR节点我们可以搭建SSR+TLS+Caddy，搭建需要购买域名，可以参考这个[域名购买及设置教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) （有免费域名） 。如果搭建SS节点，推荐SS+插件，比如v2ray插件模式下的SS+Websocket，这个配置不用域名就可以搭建。
 
 用一键搭建工具ProxySU来搭建即可，傻瓜式，很方便，[一键搭建工具ProxySU使用教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7ProxySU)
 
 示意图:
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/ssimage/ssrtls.PNG)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/ssimage/ss-plugin2.png)
+
 
 ***
 
@@ -288,13 +284,11 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 ***
 
+```bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
-
 chmod +x tcp.sh
-
 ./tcp.sh
-
-
+```
 ***
 
 > 如果提示 wget: command not found 的错误，这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。CentOS系统安装wget命令: yum install -y wget Debian/Ubuntu系统安装wget命令:apt-get install -y wget
@@ -303,7 +297,7 @@ chmod +x tcp.sh
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
 
-操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。
+操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。（如果服务器系统是Debain10或以上系统，可不用安装内核，直接输入数字4启动bbr原版加速。）
 
 以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
 
@@ -334,19 +328,17 @@ chmod +x tcp.sh
 
 第一次电脑系统使用SSR/SS客户端时，如果提示你需要安装NET Framework 4.0，网上搜一下这个东西，安装一下即可。NET Framework 4.0是SSR/SS的运行库，没有这个SSR/SS客户端无法正常运行。有的电脑系统可能会自带NET Framework 4.0。
 
-Windows SSR客户端 [下载地址](https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases) 
+Windows SSR客户端：[github最新版下载](https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases) [github镜像下载](https://dgithub.xyz/shadowsocksr-backup/shadowsocksr-csharp/releases)
 
-Windows SS客户端 [下载地址](https://github.com/shadowsocks/shadowsocks-windows/releases) 
+Windows SS 客户端：[github最新版下载](https://github.com/shadowsocks/shadowsocks-windows/releases) [github镜像下载](https://dgithub.xyz/shadowsocks/shadowsocks-windows/releases) 
 
-Mac SSR客户端 [下载地址](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases) 
+Mac SSR客户端：[github最新版下载](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases)  [github镜像下载](https://dgithub.xyz/shadowsocksr-backup/ShadowsocksX-NG/releases) 
 
-[Linux客户端一键安装配置使用脚本](https://github.com/the0demiurge/CharlesScripts/blob/master/charles/bin/ssr) (使用方法见注释)
+Linux 客户端：[下载地址](https://d2.freessr2.xyz/Shadowsocks-Qt5-x86_64-v3.0.1.AppImage)
 
-安卓SSR客户端 [下载地址](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases/download/3.4.0.8/shadowsocksr-release.apk) 
+安卓SSR 客户端：[github最新版下载](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases) [github镜像下载](https://dgithub.xyz/shadowsocksr-backup/shadowsocksr-android/releases)
 
 iOS：[没有美区AppleID的翻墙教程](https://github.com/Alvin9999/new-pac/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)  [iOS注册美区Apple ID教程](https://github.com/Alvin9999/new-pac/wiki/iOS%E6%B3%A8%E5%86%8C%E7%BE%8E%E5%8C%BAApple-ID%E6%95%99%E7%A8%8B) 
-
-[全平台SS/SSR客户端下载汇总](http://www.mediafire.com/folder/sfqz8bmodqdx5/shadowsocks相关客户端)
 
 ***
 
@@ -354,20 +346,12 @@ iOS：[没有美区AppleID的翻墙教程](https://github.com/Alvin9999/new-pac/
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/demo/42.PNG)
 
-在对应的位置，填上服务器ip、服务器端口、密码、加密方式、协议和混淆，最后将浏览器的代理设置为（http）127.0.0.1和1080即可。账号的端口号就是你自己设置的，而要上网的浏览器的端口号是1080，固定的，谷歌浏览器可以通过 SwitchyOmega 插件来设置。
+在对应的位置，填上服务器ip、服务器端口、密码、加密方式、协议和混淆。
 
-下载插件：[switchyomega](https://github.com/atrandys/trojan/releases/download/1.0.0/SwitchyOmega_Chromium.crx)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssrdl001.jpg)
 
-安装插件，打开chrome，打开扩展程序，将下载的插件拖动到扩展程序页面，添加到扩展。
-![20181116000534](https://user-images.githubusercontent.com/12132898/70548725-0461d000-1bae-11ea-9d1e-4577e36ac46e.png)
+启动SSR客户端后，右键SSR客户端图标，选择第一个“系统代理模式”，里面有3个子选项，选择"全局模式“，之后就可以用浏览器翻墙。
 
-完成添加，会跳转到switchyomega页面，点跳过教程，然后点击proxy，如图填写，最后点击应用选项。
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/demo/ssrkz.PNG)
-
-启动SSR客户端后，右键SSR客户端图标，选择第一个“系统代理模式”，里面有3个子选项，选择"全局模式“，之后就可以用浏览器设置好了的代理模式（http）127.0.0.1和1080翻墙，此模式下所有的网站都会走SSR代理。
-
-![ssr9000](https://user-images.githubusercontent.com/12132898/32225069-cfe6195a-be7e-11e7-99e0-e2fa98f93b1f.png)
 
 ***
 
@@ -385,7 +369,7 @@ C：混淆选择plain意思是不混淆，有的时期增加混淆有利于突�
 
 如果你的手机用的是SS客户端，SS客户端没有填协议和混淆的地方，如果你部署的协议和混淆的时候没有选择兼容原版（SS版），因此手机是用不了的。这个时候你把协议弄成兼容原版、混淆也设置成兼容原版即可。或者直接将协议设置成origin且混淆设置成plain。
 
-3、vps的服务器操作系统不要用的太高，太高可能会因为系统的防火墙问题导致搭建的SSR账号连不上。如果某个系统不好用，可以选择其它的系统来尝试。
+3、vps的服务器操作系统不要用的太高，SSR脚本不支持，会导致安装后SSR无法启动成功，比如Debain12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24。
 
 4、vultr服务商提供的vps服务器是单向流量计算，有的vps服务商是双向流量计算，单向流量计算对于用户来说更实惠。因为我们是在vps服务器上部署SSR服务端后，再用SSR客户端翻墙，所以SSR服务端就相当于中转，比如我们看一个视频，必然会产生流量，假如消耗流量80M，那么VPS服务器会产生上传80M和下载80M流量，vultr服务商只计算单向的80M流量。如果是双向计算流量，那么会计算为160M流量。
 
@@ -413,4 +397,4 @@ vultr和其他的国外商家一样，都是使用工单的形式与客服联系
 ***
 
 
-有问题可以发邮件至海外邮箱kebi2014@gmail.com
+有问题可以发邮件至海外邮箱rebeccalane27@gmail.com
